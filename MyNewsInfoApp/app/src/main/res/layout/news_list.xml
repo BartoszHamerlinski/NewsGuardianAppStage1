@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item that displays an news -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsListWrapper">
+
+    <!-- Section Name & Date/Time wrapper -->
+    <LinearLayout
+        android:id="@+id/section_date_wrapper"
+        style="@style/NewsListSectionDateWrapper">
+
+        <!-- Section Name -->
+        <TextView
+            android:id="@+id/section_name"
+            style="@style/NewsListSection"
+            tools:text="SomeNews" />
+
+    </LinearLayout>
+
+    <!-- Image/Title wrapper -->
+    <LinearLayout
+        android:id="@+id/image_title_wrapper"
+        style="@style/NewsListImageTitleWrapper">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            style="@style/NewsListTitle"
+            tools:text="Example News" />
+    </LinearLayout>
+
+    <!-- Author name -->
+    <TextView
+        android:id="@+id/author_name"
+        style="@style/NewsListAuthor"
+        tools:text="John Smith" />
+</LinearLayout>
